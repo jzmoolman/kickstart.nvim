@@ -142,6 +142,10 @@ vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+-- Tabs?
+
+vim.o.expandtab = true
+
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
@@ -632,6 +636,7 @@ require('lazy').setup({
             },
           },
         },
+        verible = {},
       }
 
       -- Ensure the servers and tools above are installed
